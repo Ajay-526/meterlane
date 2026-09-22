@@ -1,23 +1,24 @@
-:root { --ink:#102a22; --muted:#4a6a5e; --leaf:#0f6b4c; --bg:#f4f7f5; --bad:#7a1f1f; }
+:root { --ink:#14131a; --muted:#6b6574; --paper:#f6f3ee; --violet:#6d4dff; --bad:#7a1f1f; --night:#0c0b12; }
 * { box-sizing: border-box; }
 body {
-  margin: 0; font-family: ui-sans-serif, system-ui, sans-serif;
-  color: var(--ink); background: var(--bg); line-height: 1.5;
+  margin: 0; font-family: "Source Sans 3", ui-sans-serif, system-ui, sans-serif;
+  color: var(--ink); background: var(--paper); line-height: 1.5;
 }
 header, main { max-width: 980px; margin: 0 auto; padding: 0 20px; }
-header { display: flex; justify-content: space-between; align-items: center; padding-top: 22px; }
-.brand { font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: var(--leaf); text-decoration: none; font-size: .8rem; }
-h1 { font-size: 1.8rem; }
-.card { background: #fff; border-radius: 16px; padding: 20px 24px; margin: 16px 0; }
+header { display: flex; justify-content: space-between; align-items: center; padding-top: 18px; }
+.logo-img { height: 32px; width: auto; }
+h1 { font-family: Fraunces, Georgia, serif; font-weight: 400; font-size: 1.9rem; }
+.card { background: #fffcf8; border: 1px solid #e6e0d6; border-radius: 4px; padding: 20px 24px; margin: 16px 0; }
 button {
-  font: inherit; padding: 8px 12px; border: 0; border-radius: 8px;
-  background: var(--leaf); color: #fff; font-weight: 600; cursor: pointer; margin-right: 8px;
+  font: inherit; padding: 8px 12px; border: 0; border-radius: 4px;
+  background: var(--violet); color: #fff; font-weight: 600; cursor: pointer; margin-right: 8px;
 }
-button.secondary { background: #143028; }
+button.secondary { background: var(--night); }
 table { width: 100%; border-collapse: collapse; }
-th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid #e3ebe7; font-size: .95rem; }
-.bad { background: var(--bad); color: #fff; padding: 10px 14px; border-radius: 8px; }
-.ok { color: var(--leaf); font-weight: 700; }
+th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid #e6e0d6; font-size: .95rem; }
+.bad { background: var(--bad); color: #fff; padding: 10px 14px; border-radius: 4px; }
+.ok { color: var(--violet); font-weight: 700; }
 .muted { color: var(--muted); }
-code { background: #143028; color: #d6f5e8; padding: .12rem .35rem; border-radius: 6px; }
-pre { background: #143028; color: #d6f5e8; padding: 12px; border-radius: 8px; overflow: auto; }
+code { background: #ece6ff; color: #4b2fd4; padding: .12rem .35rem; border-radius: 4px; }
+pre { background: var(--night); color: #e8e2ff; padding: 12px; border-radius: 6px; overflow: auto; }
+input { font: inherit; padding: 8px 10px; border: 1px solid #e6e0d6; border-radius: 4px; }
