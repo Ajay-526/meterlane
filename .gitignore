@@ -1,0 +1,10 @@
+.grok/
+**/.grok/
+node_modules/
+.next/
+.env
+.env.local
+data/
+*.zip
+*.log
+.DS_Store
